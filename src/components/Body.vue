@@ -1,12 +1,15 @@
 <template>
   <div id="body">
-    
+    <door></door>
   </div>
 </template>
 
 <script>
+import Door from './Door.vue';
 export default {
-
+  components: {
+    Door
+  }
 }
 </script>
 
