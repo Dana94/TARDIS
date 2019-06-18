@@ -29,7 +29,6 @@ export default {};
   grid-template-columns: 1fr 1fr;
   &>div {
     background-color: #7066ac;
-    margin-left: 10px;
     margin: 15px;
     width: 55%;
     justify-self: center;
