@@ -15,7 +15,7 @@ export default {};
   .row {
     background-color: #1e099c;
     margin: 0 auto;
-    border: 1px solid;
+    // border: 1px solid;
   }
   // https://css-tricks.com/the-shapes-of-css/ for Trapezoid help
   .triangle {
