@@ -17,4 +17,4 @@ npm run build
 
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
-Svgs made with [Inkscape](https://inkscape.org/)(free and open source! :thumbsup:)
+Svgs made with [Inkscape](https://inkscape.org/) (free and open source!) :thumbsup:
