@@ -46,7 +46,6 @@ export default {};
   position: relative;
   .title {
     position: absolute;
-    // image from http://www.anomalypodcast.com/blog-2/geek-crafts-tardis-shoes/
     background-image: url("../assets/police_box_title.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -87,7 +86,6 @@ export default {};
         }
         & > .pane {
           height: 11px;
-          // background-color: #4039c3;
           border-bottom: 1px solid;
           border-top: 1px solid;
         }
@@ -104,7 +102,6 @@ export default {};
               grid-template-rows: 10px 1fr 10px;
               grid-template-columns: 1fr;
               .poster {
-                // image from https://www.deviantart.com/steelgohst/art/Tardis-44709735
                 background-image: url("../assets/sign.jpg");
                 background-size: contain;
                 background-repeat: no-repeat;
