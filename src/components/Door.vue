@@ -9,13 +9,14 @@
         <div class="pane"></div>
         <div class="sign">
           <div>
-            <div v-for="i in 3" :key="i.id" :class="{'pane': i % 2 != 0}"></div>
+            <div v-for="i in 3" :key="i.id" :class="{'pane': i % 2 != 0, 'poster': i % 2 == 0}"></div>
           </div>
         </div>
         <div v-for="i in 5" :key="i.id" :class="{'pane': i % 2 != 0}"></div>
       </div>
     </div>
     <div class="side">
+      <div class="keyknob"></div>
       <div>
         <div class="pane"></div>
         <div class="window">
@@ -46,6 +47,7 @@ export default {};
     width: 100%;
     margin: 0 auto;
     height: 100%;
+    position: relative;
     & > div {
       display: grid;
       grid-template: 15px 1fr 15px 1fr 15px 1fr 15px 1fr 15px / 1fr;
@@ -63,7 +65,7 @@ export default {};
           border: 1px solid white;
         }
       }
-      &>.pane {
+      & > .pane {
         height: 11px;
         // background-color: #4039c3;
         border-bottom: 1px solid;
@@ -74,16 +76,32 @@ export default {};
         justify-self: center;
         &.sign {
           & > div {
-            width: 80%;
+            width: 62%;
             margin: 0 auto;
             border: 1px solid;
             height: 100%;
             display: grid;
             grid-template-rows: 10px 1fr 10px;
             grid-template-columns: 1fr;
+            .poster {
+              // image from https://www.deviantart.com/steelgohst/art/Tardis-44709735
+              background-image: url("../assets/sign.jpg");
+
+              background-size: contain;
+              background-repeat: no-repeat;
+            }
           }
         }
       }
+    }
+    .keyknob {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: #b9b9b9;
+      border-radius: 50%;
+      left: 4px;
+      bottom: 12rem;
     }
   }
 }
