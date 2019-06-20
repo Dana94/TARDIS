@@ -94,7 +94,7 @@ export default {};
           justify-self: center;
           &.sign {
             & > div {
-              width: 75%;
+              width: 76%;
               margin: 0 auto;
               border: 1px solid;
               height: 100%;
@@ -118,6 +118,7 @@ export default {};
         border-radius: 50%;
         left: 4px;
         bottom: 12rem;
+        display: inline-block;
       }
     }
   }
