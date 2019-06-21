@@ -12,17 +12,17 @@ export default {};
 <style lang="scss" scoped>
 #footer {
   .triangle {
-    border-bottom: 22px solid #1e099c;
-    border-left: 40px solid transparent;
-    border-right: 40px solid transparent;
+    border-bottom: 10px solid #1e099c;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
     height: 0px;
-    width: 298px;
+    width: 300px;
     margin: 0 auto;
   }
   .row {
     height: 20px;
     background-color: #1e099c;
-    width: 379px;
+    width: 316px;
     margin: 0 auto;
   }
 }
