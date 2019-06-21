@@ -6,7 +6,7 @@
         <div>
           <div class="pane"></div>
           <div class="window">
-            <div v-for="i in 6" :key="i.id"></div>
+            <div v-for="i in 6" :key="i.id" :class="{'stained': i == 4 || i == 6}"></div>
           </div>
           <div class="pane"></div>
           <div class="sign">
@@ -23,7 +23,7 @@
         <div>
           <div class="pane"></div>
           <div class="window">
-            <div v-for="i in 6" :key="i.id"></div>
+            <div v-for="i in 6" :key="i.id" :class="{'stained': i == 4 || i == 6}"></div>
           </div>
           <div class="pane"></div>
           <div class="shield"></div>
@@ -83,6 +83,9 @@ export default {};
           width: 100%;
           div {
             border: 1px solid white;
+            &.stained {
+              background-color: #ffffff59;
+            }
           }
         }
         & > .pane {
