@@ -2,6 +2,10 @@
   <div class="lamp">
     <div class="top"></div>
     <div class="base"></div>
+    <!-- <div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div> -->
     <div class="bulb"></div>
     <div class="base"></div>
   </div>
@@ -23,6 +27,12 @@ export default {};
     margin: 0 auto;
     width: 15px;
   }
+  // .bar {
+  //   background-color: #1e099c;
+  //   height: 30px;
+  //   width: 30px;
+  //   margin: 0 auto;
+  // }
   .bulb {
     background-color: #cbc8de;
     height: 30px;
