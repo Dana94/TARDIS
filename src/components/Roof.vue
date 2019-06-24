@@ -7,7 +7,8 @@
 </template>
 
 <script>
-export default {};
+export default {
+};
 </script>
 
 <style lang="scss" scoped>
@@ -23,7 +24,7 @@ export default {};
     border-left: 108px solid transparent;
     border-right: 108px solid transparent;
     height: 0px;
-    width: 39px;
+    width: 34px;
     margin: 0 auto;
   }
   .row:nth-child(2) {
