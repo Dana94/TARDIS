@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <app-lamp></app-lamp>
     <app-roof></app-roof>
     <app-body></app-body>
     <app-footer></app-footer>
@@ -10,6 +11,7 @@
 import Roof from './components/Roof.vue';
 import Body from './components/Body.vue';
 import Footer from './components/Footer.vue';
+import Lamp from './components/Lamp.vue';
 
 export default {
   name: 'app',
@@ -21,7 +23,8 @@ export default {
   components: {
     appBody: Body,
     appFooter: Footer,
-    appRoof: Roof
+    appRoof: Roof,
+    appLamp: Lamp
   }
 }
 </script>
