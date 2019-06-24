@@ -34,7 +34,7 @@ export default {};
   //   margin: 0 auto;
   // }
   .bulb {
-    background-color: #cbc8de;
+    animation: pulse 5s infinite;
     height: 30px;
     width: 30px;
     margin: 0 auto;
@@ -45,6 +45,15 @@ export default {};
     height: 7px;
     width: 37px;
     margin: 0 auto;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #F5F5DC;
+  }
+  100% {
+    background-color: #FFFF70;
   }
 }
 </style>
