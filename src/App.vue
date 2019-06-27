@@ -1,60 +1,60 @@
 <template>
   <div id="app">
-    <app-lamp></app-lamp>
-    <app-roof></app-roof>
-    <app-body></app-body>
-    <app-footer></app-footer>
+    <!-- <transition-group name="fade"> -->
+      <!-- <template v-if="show"> -->
+        <app-lamp key="lamp"></app-lamp>
+        <app-roof key="roof"></app-roof>
+        <app-body key="app-body"></app-body>
+        <app-footer key="app-footer"></app-footer>
+      <!-- </template> -->
+    <!-- </transition-group> -->
   </div>
 </template>
 
 <script>
-import Roof from './components/Roof.vue';
-import Body from './components/Body.vue';
-import Footer from './components/Footer.vue';
-import Lamp from './components/Lamp.vue';
+import Roof from "./components/Roof.vue";
+import Body from "./components/Body.vue";
+import Footer from "./components/Footer.vue";
+import Lamp from "./components/Lamp.vue";
 
 export default {
-  name: 'app',
-  data () {
+  name: "app",
+  data() {
     return {
-      msg: 'Welcome to Your Vue.js App'
-    }
+      show: true
+    };
   },
   components: {
     appBody: Body,
     appFooter: Footer,
     appRoof: Roof,
     appLamp: Lamp
+  },
+  created() {
+    let vm = this;
+    setInterval(() => {
+      vm.show = !vm.show;
+      console.log(vm.show);
+    }, 9000);
   }
-}
+};
 </script>
 
 <style lang="scss">
-@import url('./assets/base.scss');
+@import url("./assets/base.scss");
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
   margin-top: 60px;
 }
 
-h1, h2 {
-  font-weight: normal;
+// h1,
+// h2 {
+//   font-weight: normal;
+// }
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 6s;
 }
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
+.fade-enter, .fade-leave-to {
+  opacity: 0;
 }
 </style>
