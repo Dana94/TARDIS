@@ -115,6 +115,7 @@ export default {};
               display: grid;
               grid-template-rows: 10px 1fr 10px;
               grid-template-columns: 1fr;
+              margin-top: -2px;
 
               .poster {
                 background-image: url("../assets/sign.jpg");
