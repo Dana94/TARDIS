@@ -27,7 +27,9 @@
             <div v-for="i in 6" :key="i.id" :class="{'stained': i == 4 || i == 6}"></div>
           </div>
           <div class="pane"></div>
-          <div class="shield"></div>
+          <div class="shield">
+            <img src="../assets/St._Johns_Ambulance.png" alt>
+          </div>
           <div v-for="i in 5" :key="i.id" :class="{'pane': i % 2 != 0}"></div>
         </div>
       </div>
@@ -89,6 +91,15 @@ export default {};
             }
           }
         }
+        .shield {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            height: 30px;
+            width: auto;
+          }
+        }
         & > .pane {
           height: 11px;
           border-bottom: 1px solid;
@@ -134,7 +145,7 @@ export default {};
         width: 4px;
         height: 15px;
         right: 3px;
-        left: .25rem;
+        left: 0.25rem;
         top: 9rem;
       }
       .keyknob {
