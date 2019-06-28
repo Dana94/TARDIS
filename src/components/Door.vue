@@ -67,14 +67,15 @@ export default {};
     margin-top: 0rem;
     .side {
       border: 1px solid black;
+      border-bottom: none;
       width: 100%;
       margin: 0 auto;
-      height: 100%;
       position: relative;
       & > div.middle {
         display: grid;
         grid-template: 15px 1fr 15px 1fr 15px 1fr 15px 1fr 15px / 1fr;
         border: 1px solid black;
+        border-bottom: none;
         height: 100%;
         width: 68%;
         margin: 0 auto;
@@ -101,9 +102,15 @@ export default {};
           }
         }
         & > .pane {
-          height: 11px;
+          // height: 11px;
           border-bottom: 1px solid;
           border-top: 1px solid;
+          &:last-child {
+            border-bottom: none;
+          }
+          &:first-child {
+            border-top: none;
+          }
         }
         & > div {
           width: 100%;
@@ -120,15 +127,15 @@ export default {};
               top: 2rem;
             }
             .container {
-              width: 68%;
+              width: 66%;
               margin: 0 auto;
               border: 1px solid;
+              border-bottom: none;
+              border-top: none;
               height: 100%;
               display: grid;
               grid-template-rows: 10px 1fr 10px;
               grid-template-columns: 1fr;
-              margin-top: -2px;
-
               .poster {
                 background-image: url("../assets/sign.jpg");
                 background-size: contain;
