@@ -8,11 +8,6 @@
         <div class="bar"></div>
       </div>
     </div>
-    <!-- <div>
-      <div class="bar"></div>
-      <div class="bulb"></div>
-      <div class="bar"></div>
-    </div>-->
     <div class="bulb"></div>
     <div class="base"></div>
   </div>
@@ -23,13 +18,16 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
+$blue: #1e099c;
+$light-off: #f5f5dc;
+$light-on: #ffff70;
+
 .lamp {
   position: relative;
-  margin: 0 auto;
   .top-part {
     margin-bottom: -1.875rem;
     .top {
-      border-bottom: 3px solid #1e099c;
+      border-bottom: 3px solid $blue;
       border-left: 8px solid transparent;
       border-right: 8px solid transparent;
       height: 0px;
@@ -40,7 +38,7 @@ export default {};
       display: flex;
       justify-content: center;
       .bar {
-        background-color: #1e099c;
+        background-color: $blue;
         height: 30px;
         width: 3px;
         margin: 0 12px;
@@ -55,7 +53,7 @@ export default {};
     border-radius: 50%;
   }
   .base {
-    background-color: #1e099c;
+    background-color: $blue;
     height: 7px;
     width: 37px;
     margin: 0 auto;
@@ -64,10 +62,10 @@ export default {};
 
 @keyframes pulse {
   0% {
-    background-color: #f5f5dc;
+    background-color: $light-off;
   }
   100% {
-    background-color: #ffff70;
+    background-color: $light-on;
   }
 }
 </style>

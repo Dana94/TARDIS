@@ -42,14 +42,10 @@ export default {
 
 <style lang="scss">
 @import url("./assets/base.scss");
+
 #app {
   margin-top: 60px;
 }
-
-// h1,
-// h2 {
-//   font-weight: normal;
-// }
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 6s;
