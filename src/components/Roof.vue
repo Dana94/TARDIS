@@ -20,7 +20,7 @@ export default {
   }
   // https://css-tricks.com/the-shapes-of-css/ for Trapezoid help
   .triangle {
-    border-bottom: 24px solid #1e099c;
+    border-bottom: 14px solid #1e099c;
     border-left: 108px solid transparent;
     border-right: 108px solid transparent;
     height: 0px;
