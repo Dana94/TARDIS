@@ -55,7 +55,9 @@ export default {};
     background-repeat: no-repeat;
     height: 30px;
     width: 100%;
-    top: -2rem;
+    top: -2.5rem;
+    border: 3px solid #4039c3;
+    left: -3px;
   }
   .door-panels {
     background-color: #4039c3;
@@ -127,7 +129,7 @@ export default {};
               top: 2rem;
             }
             .container {
-              width: 66%;
+              width: 65%;
               margin: 0 auto;
               border: 1px solid;
               border-bottom: none;
