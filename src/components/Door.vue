@@ -3,7 +3,7 @@
     <div class="title"></div>
     <div class="door-panels">
       <div class="side">
-        <div>
+        <div class="middle">
           <div class="pane"></div>
           <div class="window">
             <div v-for="i in 6" :key="i.id" :class="{'stained': i == 4 || i == 6}"></div>
@@ -19,8 +19,9 @@
         </div>
       </div>
       <div class="side">
+        <div class="knob"></div>
         <div class="keyknob"></div>
-        <div>
+        <div class="middle">
           <div class="pane"></div>
           <div class="window">
             <div v-for="i in 6" :key="i.id" :class="{'stained': i == 4 || i == 6}"></div>
@@ -68,7 +69,7 @@ export default {};
       margin: 0 auto;
       height: 100%;
       position: relative;
-      & > div {
+      & > div.middle {
         display: grid;
         grid-template: 15px 1fr 15px 1fr 15px 1fr 15px 1fr 15px / 1fr;
         border: 1px solid black;
@@ -104,7 +105,7 @@ export default {};
               border: 1px solid black;
               width: 4px;
               height: 15px;
-              right: 3px;
+              right: 2px;
               top: 2rem;
             }
             .container {
@@ -126,6 +127,16 @@ export default {};
           }
         }
       }
+      & > .knob {
+        position: absolute;
+        background-color: #b9b9b9;
+        border: 1px solid black;
+        width: 4px;
+        height: 15px;
+        right: 3px;
+        left: .25rem;
+        top: 9rem;
+      }
       .keyknob {
         position: absolute;
         width: 8px;
@@ -135,6 +146,7 @@ export default {};
         left: 2px;
         bottom: 12rem;
         display: inline-block;
+        border: 1px solid black;
       }
     }
   }
