@@ -31,11 +31,11 @@ export default {
     appLamp: Lamp
   },
   created() {
-    // let vm = this;
-    // setInterval(() => {
-    //   vm.show = !vm.show;
-    //   console.log(vm.show);
-    // }, 9000);
+    let vm = this;
+    setInterval(() => {
+      vm.show = !vm.show;
+      console.log(vm.show);
+    }, 9000);
   }
 };
 </script>
