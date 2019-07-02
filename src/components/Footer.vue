@@ -15,7 +15,7 @@ $blue: #1e099c;
   .row {
     height: 26px;
     background-color: $blue;
-    width: 316px;
+    max-width: 316px;
     margin: 0 auto;
   }
 }

@@ -32,9 +32,9 @@ export default {
   },
   created() {
     let vm = this;
+    // transition fade in/out effect
     setInterval(() => {
       vm.show = !vm.show;
-      console.log(vm.show);
     }, 9000);
   }
 };
