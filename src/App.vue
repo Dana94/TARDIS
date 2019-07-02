@@ -1,13 +1,13 @@
 <template>
   <div id="app">
-    <!-- <transition-group name="fade">
-      <template v-if="show"> -->
+    <transition-group name="fade">
+      <template v-if="show">
         <app-lamp key="lamp"></app-lamp>
         <app-roof key="roof"></app-roof>
         <app-body key="app-body"></app-body>
         <app-footer key="app-footer"></app-footer>
-      <!-- </template>
-    </transition-group> -->
+      </template>
+    </transition-group>
   </div>
 </template>
 
@@ -42,14 +42,10 @@ export default {
 
 <style lang="scss">
 @import url("./assets/base.scss");
+
 #app {
   margin-top: 60px;
 }
-
-// h1,
-// h2 {
-//   font-weight: normal;
-// }
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 6s;

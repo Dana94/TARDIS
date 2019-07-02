@@ -9,10 +9,12 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
+$blue: #1e099c;
+
 #footer {
   .row {
     height: 26px;
-    background-color: #1e099c;
+    background-color: $blue;
     width: 316px;
     margin: 0 auto;
   }

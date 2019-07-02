@@ -42,8 +42,15 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
+$door: #4039c3;
+$black: #000000;
+$white: #ffffff;
+$knob-color: #b9b9b9;
+$window: #ffffffb5;
+$window-stained: #ffffff59;
+
 #door {
-  background-color: #4039c3;
+  background-color: $door;
   height: 100%;
   width: 80%;
   margin: 0 auto;
@@ -56,11 +63,11 @@ export default {};
     height: 30px;
     width: 100%;
     top: -2.5rem;
-    border: 3px solid #4039c3;
+    border: 3px solid $door;
     left: -3px;
   }
   .door-panels {
-    background-color: #4039c3;
+    background-color: $door;
     height: 100%;
     width: 80%;
     margin: 0 auto;
@@ -68,7 +75,7 @@ export default {};
     grid-template-columns: 1fr 1fr;
     margin-top: 0rem;
     .side {
-      border: 1px solid black;
+      border: 1px solid $black;
       border-bottom: none;
       width: 100%;
       margin: 0 auto;
@@ -76,21 +83,21 @@ export default {};
       & > div.middle {
         display: grid;
         grid-template: 15px 1fr 15px 1fr 15px 1fr 15px 1fr 15px / 1fr;
-        border: 1px solid black;
+        border: 1px solid $black;
         border-bottom: none;
         height: 100%;
         width: 68%;
         margin: 0 auto;
         .window {
-          background-color: #ffffffb5;
+          background-color: $window;
           display: grid;
           grid-template-columns: 1fr 1fr 1fr;
           grid-template-rows: 1fr 1fr;
           width: 100%;
           div {
-            border: 1px solid white;
+            border: 1px solid $white;
             &.stained {
-              background-color: #ffffff59;
+              background-color: $window-stained;
             }
           }
         }
@@ -104,7 +111,6 @@ export default {};
           }
         }
         & > .pane {
-          // height: 11px;
           border-bottom: 1px solid;
           border-top: 1px solid;
           &:last-child {
@@ -121,8 +127,8 @@ export default {};
             position: relative;
             .knob {
               position: absolute;
-              background-color: #b9b9b9;
-              border: 1px solid black;
+              background-color: $knob-color;
+              border: 1px solid $black;
               width: 4px;
               height: 15px;
               right: 2px;
@@ -149,8 +155,8 @@ export default {};
       }
       & > .knob {
         position: absolute;
-        background-color: #b9b9b9;
-        border: 1px solid black;
+        background-color: $knob-color;
+        border: 1px solid $black;
         width: 4px;
         height: 15px;
         right: 3px;
@@ -161,12 +167,12 @@ export default {};
         position: absolute;
         width: 8px;
         height: 8px;
-        background-color: #b9b9b9;
+        background-color: $knob-color;
         border-radius: 50%;
         left: 2px;
         bottom: 12rem;
         display: inline-block;
-        border: 1px solid black;
+        border: 1px solid $black;
       }
     }
   }
