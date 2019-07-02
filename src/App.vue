@@ -1,13 +1,13 @@
 <template>
   <div id="app">
-    <!-- <transition-group name="fade">
-      <template v-if="show"> -->
+    <transition-group name="fade">
+      <template v-if="show">
         <app-lamp key="lamp"></app-lamp>
         <app-roof key="roof"></app-roof>
         <app-body key="app-body"></app-body>
         <app-footer key="app-footer"></app-footer>
-      <!-- </template>
-    </transition-group> -->
+      </template>
+    </transition-group>
   </div>
 </template>
 
